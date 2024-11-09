@@ -7,7 +7,5 @@
         const occurrences = words.filter((wd) => wd === lowercaseWord).length;
         return occurrences;
     };
-    const sentence = "Programming is on rock";
-    const word = "rock";
-    console.log(countWordOccurrences(sentence, word));
+    console.log(countWordOccurrences("I love typescript", "typescript"));
 }

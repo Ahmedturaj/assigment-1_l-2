@@ -1,22 +1,19 @@
 "use strict";
 {
     const calculateShapeArea = (shape) => {
-        if (shape.shapeName === "circle") {
+        if (shape.shape === "circle") {
             return Math.PI * Math.pow(shape.radius, 2);
         }
-        else if (shape.shapeName === "rectangle") {
+        else if (shape.shape === "rectangle") {
             return shape.height * shape.width;
         }
     };
-    const circle = {
-        shapeName: "circle",
-        radius: 4.5,
-    };
+    const circle = { shape: "circle", radius: 5 };
     console.log(calculateShapeArea(circle));
     const rectangle = {
-        shapeName: "rectangle",
-        height: 4,
-        width: 3,
+        shape: "rectangle",
+        width: 4,
+        height: 6,
     };
     console.log(calculateShapeArea(rectangle));
 }

@@ -3,6 +3,6 @@
     const updateProfile = (profile, update) => {
         return Object.assign(Object.assign({}, profile), update);
     };
-    const myProfile = { name: "Turaj", age: 21, email: "turaj@example.com" };
-    console.log(updateProfile(myProfile, { age: 25 }));
+    const myProfile = { name: "Alice", age: 25, email: "alice@example.com" };
+    console.log(updateProfile(myProfile, { age: 26 }));
 }
