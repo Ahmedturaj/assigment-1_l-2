@@ -3,15 +3,15 @@
 Think of union types like a menu with options. When you order a Biriyani, you might have option of beef Biriyani or mutton Biriyani. Here , you are getting a plate of Biriyani, but you don't care which variety it is - as long as it's one of the options on the menu . Union types let you say, "Give me a Plate of Biriyani and I'm okay with it bring either beef of mutton."
 
 in code , this might look like :
-`
-type biriyani= "beef"|"mutton";
+
+```type biriyani= "beef"|"mutton";
 
 const serveBiriyani=(biriyani:biriyani):string=>{
 return `Here is your ${biriyani} Biriyani sir.`
 };
 console.log(serveBiriyani("beef"));
 //output will be - Here is your beef Biriyani sir.
-`
+
 
 - **What's Happening Here ?** You’re saying, “serveBiriyani can take either ‘beef’ Biriyani or ‘mutton’ Biriyani as a drink, and I’ll handle both.
 
@@ -23,7 +23,8 @@ So union types make things flexible. They’re a way to say, “I’ll accept di
 
 Intersection types are like wearing multiple hats at once. Imagine you’re both a parent and a teacher. Each role has its own set of responsibilities, but you carry both at the same time, and you need all the skills and attributes from both roles. Intersection types in TypeScript work the same way: they combine everything from each type into one.
 
-`
+```
+
 interface Parent {
 hasChildren: boolean;
 takeCareOfChildren(): void;
@@ -40,7 +41,6 @@ teachesSubject: "Math",
 takeCareOfChildren: () => console.log("Taking care of kids"),
 teach: () => console.log("Teaching a subject"),
 };
-`
 
 - **What’s Happening Here ?** The person object has to do everything a Parent does and everything a Teacher does. It’s a mix of both responsibilities.
 
