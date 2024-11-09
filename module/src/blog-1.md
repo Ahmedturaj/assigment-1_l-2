@@ -11,7 +11,7 @@ return `Here is your ${biriyani} Biriyani sir.`
 };
 console.log(serveBiriyani("beef"));
 //output will be - Here is your beef Biriyani sir.
-
+```
 
 - **What's Happening Here ?** You’re saying, “serveBiriyani can take either ‘beef’ Biriyani or ‘mutton’ Biriyani as a drink, and I’ll handle both.
 
@@ -41,6 +41,7 @@ teachesSubject: "Math",
 takeCareOfChildren: () => console.log("Taking care of kids"),
 teach: () => console.log("Teaching a subject"),
 };
+```
 
 - **What’s Happening Here ?** The person object has to do everything a Parent does and everything a Teacher does. It’s a mix of both responsibilities.
 
